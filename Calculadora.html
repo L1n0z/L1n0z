@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+
+
+<body>
+  
+    <h2>Calculadora Ponto Flutuante</h2>
+
+    <script>
+        function validar() {
+               let c1,v1;
+               c1 = document.getElementById("campo").value;
+                console.log(c1);
+               
+                if (c1.length == 0) {
+                document.getElementById("res").innerText = "c1 não informado";
+                    return;
+                }
+                    v1= parseFloat(c1.replace(",","."));
+                    Console.log(v1);
+
+                document.getElementById("res").innerText = v1;
+        }
+
+    </script>
+    <input id="campo" type="text" maxlenght="13" />
+<br>
+    <button type="button" onclick="validar()">Calcular</button> 
+
+<div id="res"></div>
+
+<input type="button" value="+"onClick="document.calculator.ans.value+='+'">
+<input type="button" value="-"onClick="document.calculator.ans.value+='-'">
+<input type="button" value="*"onClick="document.calculator.ans.value+='*'">
+<input type="button" value="/"onClick="document.calculator.ans.value+='/'">  
+<br>
+
+
+
+
+
+
+
+
+</body>
+
+
+
+
+</html>
